@@ -207,4 +207,11 @@ Also, what questions could I ask myself as I'm exploring the code to ensure I'm 
 
 After your guidance, could you give me a small challenge to test my understanding of how to navigate this feature's code?
 
-4. Document your findings:
+
+- Searching "save" and "load"✅ Good start, but these are generic words that may miss the feature entirely
+- Looking in storage.js✅ Correct file to check — and you found real implementation code
+- Assuming it's one feature⚠️ Risky — "export" and "file loading" may be two separate, unconnected features
+
+The core problem: You found the internal persistence layer (save/load keep app data alive between sessions), but you haven't confirmed whether a user-facing export feature exists at all. These are different things:
+
+***Exercise Part 3: Understanding Domain Model***
